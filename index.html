@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link type="Image/x-icon" href="images/icon2048.ico" rel="icon" />
+		<title>Game 2048</title>
+		<link rel="stylesheet" href="Styles/reset.css" />
+		<link rel="stylesheet" href="Styles/style.css" />
+	</head>
+
+	<body>
+		<div id="game-over-screen">
+			<h2>Game Over</h2>
+			<p>Score: <span id="game-over-score"></span></p>
+			<p>Best Score: <span id="game-over-best"></span></p>
+			<button onclick="Restart()">Restart</button>
+		</div>
+
+		<div id="game-info">
+			<h1>2048</h1>
+			<hr />
+			<h2>Score: <span id="score">0</span></h2>
+			<h3>Best Score: <span id="best-score"></span></h3>
+			<button onclick="Restart()">Restart</button>
+		</div>
+		<div id="board"></div>
+
+		<script src="JS/game.js"></script>
+		<script src="JS/tiles.js"></script>
+		<script src="JS/slide.js"></script>
+	</body>
+</html>

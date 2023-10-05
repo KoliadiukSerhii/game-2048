@@ -1,0 +1,151 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	background-color: #727371;
+	color: #fff;
+}
+
+hr {
+	width: 500px;
+}
+
+#board {
+	width: 400px;
+	height: 400px;
+	background-color: #cdc1b5;
+	border: 6px solid #bbada0;
+	border-radius: 10px;
+
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.tile {
+	width: 90px;
+	height: 90px;
+	border: 5px solid #bbada0;
+	border-radius: 10px;
+
+	font-size: 40px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 100ms;
+	animation: show 200ms;
+}
+
+#game-info {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	padding: 20px;
+	margin: auto;
+}
+
+#game-over-screen {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background-color: #fff;
+	color: #000;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	display: none;
+}
+
+#game-over-screen h2 {
+	color: #ff0000;
+	font-size: 24px;
+}
+
+#game-over-screen p {
+	margin: 10px 0;
+}
+
+#game-over-screen button {
+	background-color: #4caf50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#game-info button {
+	font-size: 14px;
+	background-color: #981d85;
+	color: #fff;
+	margin: 10px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.x2 {
+	background-color: #eeb7d4;
+	color: #fff;
+}
+
+.x4 {
+	background-color: #ffadd9;
+	color: #fff;
+}
+
+.x8 {
+	background-color: #ff7ac1;
+	color: #fff;
+}
+
+.x16 {
+	background-color: #ba4979;
+	color: #fff;
+}
+
+.x32 {
+	background-color: #f086b3;
+	color: #fff;
+}
+
+.x64 {
+	background-color: #ff47a9;
+	color: #fff;
+}
+
+.x128 {
+	background-color: #ff1491;
+	color: #fff;
+}
+
+.x256 {
+	background-color: #e00077;
+	color: #fff;
+}
+
+.x512 {
+	background-color: #ad005c;
+	color: #fff;
+}
+
+.x1024 {
+	background-color: #b02971;
+	color: #fff;
+}
+
+.x2048 {
+	background-color: #861f56;
+	color: #fff;
+}
+
+@keyframes show {
+	0% {
+		opacity: 0.5;
+		transform: scale(0);
+	}
+}
